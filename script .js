@@ -90,7 +90,7 @@ const checkemail = () => {
         showmail.innerHTML = "Your email is correct! proceed"}
     else{
         console.log(text +' email is incorrect')
-    showmail.innerHTML = "Your email is incorrect! fill it correctly."}
+    showmail.innerHTML = "Your email is incorrect! fill it correctly. (must end with @oauife.edu.ng)"}
     }
             const checkgrade = () => {
     if(gradebox.value == '') {
