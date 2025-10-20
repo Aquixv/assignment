@@ -85,7 +85,7 @@ console.log('your name is valid')
 }
 const checkemail = () => {
     const text = email.value
-    if(email.value.endsWith("@gmail.com"))
+    if(email.value.endsWith("@oauife.edu.ng"))
     { console.log(text + ' email is correct')
         showmail.innerHTML = "Your email is correct! proceed"}
     else{
