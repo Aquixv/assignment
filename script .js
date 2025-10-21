@@ -25,7 +25,7 @@ const discounts = () => {
     { console.log(text + ' Cold')
         Showtemps.innerHTML = temps.value +'℃,'+ " Your temperature is cold"}
 
-     else if   ( temps.value > 20 <=28 )
+     else if   ( temps.value > 20 && temps.value <=28 )
     { console.log(text + ' Warm')
         Showtemps.innerHTML = temps.value +'℃,'+" Your temperature is warm"}
 
@@ -35,11 +35,11 @@ const discounts = () => {
     Showtemps.innerHTML =temps.value +'℃,'+" Your temperature is hot"}
     }
     const checkBMI = () => {
-    if(height == '' || weight == '') {
-        alert('Fill in the empty space(S)')
+    if(height.value == '' || weight.value == '' || height.value < 0 || weight.value < 0) {
+        alert('Fill in the spaces correctly')
     } else {
-        console.log(height, weight);
-        const formula = Number(weight)/(Number(height)**2)
+        console.log(height.value, weight.value);
+        const formula = Number(weight.value)/(Number(height.value)**2)
         console.log(formula);
         if(formula < 18.5) {
             showStatus.innerHTML = "You are underweight, you need to eat more"
@@ -117,7 +117,7 @@ const checkemail = () => {
     }
 }
             const checkdiscount = () => {
-    if(discountbox.value == '') {
+    if(discountbox.value == '' || discountbox.value < 0) {
         alert('Fill in the empty space(s)')
     } else {
         const discount = Number(discountbox.value)
@@ -135,7 +135,7 @@ const checkemail = () => {
     }
 }
            const checkjamb = () => {
-    if(JAMB.value == '') {
+    if(JAMB.value == '' || JAMB.value < 0) {
         alert('Fill in the empty space(s)')
     } else {
         const JAMBSCORE = Number(JAMB.value)
